@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
 const token = process.env.token;
 
@@ -24,14 +24,14 @@ function play(connection, message) {
   });
 }
 
-client.on("ready", () => {
+bot.on("ready", () => {
 
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setGame("Cp help");
 
 });
 
-client.on('message', async message => { 
+bot.on('message', async message => { 
 
     if(message.content === "Bonjour"){
         message.reply("Salut");
