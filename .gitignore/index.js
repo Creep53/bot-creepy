@@ -10,10 +10,10 @@ bot.on('ready', function () {
 
 bot.on('message', msg => {
     if(message.content === "Bonjour"){
-        message.reply("Salut");
+        message.reply("Salut")
     }
 	if(message.content === "Comment ça va ?"){
-        message.reply("trql trql toi même tu sais et toi petit con ?");
+        message.reply("trql trql toi même tu sais et toi petit con ?")
     }
 
 });
