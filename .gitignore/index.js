@@ -4,8 +4,7 @@ const token = process.env.token // a garder en version heroku
 const prefix = ("Cp ");
 
 bot.on('ready', function () {
-   console.log(`Logged in as ${bot.user.tag}!`);
-    bot.user.setGame("Cp help");
+   console.log(`Logged in as ${bot.user.tag}!`)
     bot.user.setActivity('Cp help |Je suis encore en dev normale que bcp de commande marche mal :sweat:').catch(console.error)
 });
 
