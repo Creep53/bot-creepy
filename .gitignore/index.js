@@ -6,7 +6,7 @@ const prefix = ("Cp ");
 bot.on('ready', function () {
    console.log(`Logged in as ${client.user.tag}!`);
     client.user.setGame("Cp help");
-    bot.user.setActivity('rien').catch(console.error)
+    bot.user.setActivity('Cp help |Je suis encore en dev normale que bcp de commande marche mal :sweat:').catch(console.error)
 });
 
 bot.on('message', msg => {
