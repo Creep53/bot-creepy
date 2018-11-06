@@ -3,9 +3,10 @@ const bot = new Discord.Client();
 const token = process.env.token // a garder en version heroku
 const prefix = ("Cp ");
 
+
 bot.on('ready', function () {
-   console.log("Logged in as ${bot.user.tag}!")
-    bot.user.setActivity('Cp help |Je suis encore en dev normale que bcp de commande marche mal :sweat:').catch(console.error)
+    console.log("Je suis prêt à être utilisé.")
+    bot.user.setActivity('rien').catch(console.error)
 });
 
 bot.on('message', msg => {
@@ -16,7 +17,7 @@ bot.on('message', msg => {
             msg.reply('Je suis d\'accord avec toi.')
     }
    	
-    if(message.content === prefix + "help") {
+    /*if(message.content === prefix + "help") {
       var aide_embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setTitle(`:robot: Voici mes catégories d'aide !`)
@@ -30,7 +31,7 @@ bot.on('message', msg => {
 
     }
        
-    
+ */   
 
 });
 
