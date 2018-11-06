@@ -9,8 +9,9 @@ bot.on('ready', function () {
 });
 
 bot.on('message', msg => {
-    if(message.content === "Bonjour"){
-        message.reply("Salut")
+    if (msg.content === "bonjour"){
+        msg.reply("Heureux de te revoir parmis nous.")
+}
     }
 	if(message.content === "Comment ça va ?"){
         message.reply("trql trql toi même tu sais et toi petit con ?")
